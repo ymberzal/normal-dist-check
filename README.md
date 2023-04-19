@@ -1,1 +1,3 @@
 # normal-dist-check
+The script transforms the p-values to negative log transformation (-log10(p-value)). Then, performs the Shapiro-Wilk and Anderson-Darling test on the transformed p-values to assess normality.
+Taking the negative log transformation compresses the range of p-values, making the small p-values larger and the large p-values smaller, resulting in a more symmetric distribution that is closer to normal. This is because the negative log function is a monotonic transformation that can reduce the skewness of the distribution, and can also make the variance of the transformed data more stable across different ranges of p-values.
